@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #3f3f3f;
+    font-family: 'Changa', sans-serif;
+}
+
+.btn-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn {
+    width: 130px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #96e2dd;
+    border: none;
+    border-radius: 5px;
+    outline: 1px solid white;
+    padding: 5px;
+    cursor: pointer;
+    transition: transform .1s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.container-card {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.card {
+    width: 220px;
+    height: 320px;
+    border: 2px solid #62a7a2;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    text-align: center;
+}
+
+.card-title {
+    background-color: white;
+}
+
+.card-age {
+    background-color: white;
+    margin-top: -15px;
+    border-bottom: 1px solid #62a7a2;
+}
+
+.card-section {
+    margin-top: 45px;
+    background-color: white;
+}
+
+.card-year {
+    margin-top: -10px;
+    margin-bottom: 45px;
+    background-color: white;
+}
+
+.card-citation {
+    background-color: white;
+    border-top: 1px solid #62a7a2;
+}
+
+.card-citation i {
+    background-color: white;
+}
+
+p {
+    font-size: 15px;
+}
