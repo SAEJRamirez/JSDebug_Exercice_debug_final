@@ -1,3 +1,5 @@
+
+//Variables et constantes
 const container = document.querySelector('.container-card')
 const students = [
     {
@@ -45,15 +47,18 @@ const students = [
 ]
 
 
+//Fonction pour afficher tous les élèves
 function displayAll(array) {
     createElementToDisplay(array)
 }
 
+//Fonction pour trier les élèves selon leur âge
 function displayByAge(array) {
     let newArray = array.sort((a, b) => (a.age > b.age ? 1 : -1))
     createElementToDisplay(newArray)
 }
 
+//Fonction pour trier les élèves selon leur section
 function displayBySection(array) {
     let audioS = []
     let webS = []
@@ -76,9 +81,11 @@ function displayBySection(array) {
     createElementToDisplay(final)
 }
 
+//Fonction pour créer les cartes de chaque étudiant puis les implémenter dans le HTML
 function createElementToDisplay(array) {
     container.innerHTML = ""
     array.forEach((student) => {
+        //Création des éléments HTML
         let div = document.createElement('div')
         let name = document.createElement('h1')
         let age = document.createElement('p')
@@ -87,6 +94,7 @@ function createElementToDisplay(array) {
         let citationContainer = document.createElement('p')
         let citation = document.createElement('i')
 
+        //Ajout des différentes classes
         div.classList.add('card')
         name.classList.add('card-title')
         age.classList.add('card-age')
@@ -94,12 +102,14 @@ function createElementToDisplay(array) {
         year.classList.add('card-year')
         citationContainer.classList.add('card-citation')
 
+        //Ajout des textes dans les éléments HTML
         name.textContent = student.name
         age.textContent = student.age + ' ans'
         section.textContent = student.section
         year.textContent = 'Année: ' + student.year
         citation.textContent = student.citation
 
+        //Insertion des éléments dans la div
         div.appendChild(name)
         div.appendChild(age)
         div.appendChild(section)
@@ -107,6 +117,7 @@ function createElementToDisplay(array) {
         citationContainer.appendChild(citation)
         div.appendChild(citationContainer)
 
+        //Insertion de la div dans le conteneur "container-card"
         container.appendChild(div)
     })
 }

@@ -1,50 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Contact</title>
-    <link rel="stylesheet" type="text/css" href="../css/global.css">
-    <link rel="stylesheet" type="text/css" href="../css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="../css/contact.css">
-</head>
-<body>
-    <div id="side-nav-container">
-        <div id="side-nav">
-            <span class="close-btn">&times;</span>
-            <a href="Home.html">Accueil</a>
-            <a href="Contact.html">Contact</a>
+<!doctype html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Contact</title>
+
+        <!-- Imports des feuilles de styles -->
+        <link rel="stylesheet" type="text/css" href="../css/global.css">
+        <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+        <link rel="stylesheet" type="text/css" href="../css/contact.css">
+    </head>
+
+
+    <body>
+        <!-- Menu de navigation -->
+        <div id="side-nav-container">
+            <div id="side-nav">
+                <span class="close-btn">&times;</span>
+                <a href="Home.html">Accueil</a>
+                <a href="Contact.html">Contact</a>
+            </div>
         </div>
-    </div>
-    <span class="open-btn">&#9776;</span>
-    <h1 class="title">Contactez-nous</h1>
-    <div class="form-container">
-        <form class="form">
-            <div class="input-form">
-                <p id="infoFname"></p>
-                <label for="fname">Votre nom</label>
-                <input type="text" name="fname" id="fname">
-            </div>
-            <div class="input-form">
-                <p id="infoLname"></p>
-                <label for="lname">Votre prénom</label>
-                <input type="text" name="lname" id="lname">
-            </div>
-            <div class="input-form">
-                <p id="infoEmail"></p>
-                <label for="email">Votre adresse email</label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div class="input-form">
-                <p id="infoMessage"></p>
-                <label for="message">Votre message</label>
-                <textarea maxlength="100" name="message" id="message"> </textarea>
-            </div>
-            <div class="input-form-btn">
-                <button type="submit" class="btn-submit">Envoyer</button>
-            </div>
-        </form>
-    </div>
-    <script src="../js/navbar.js"></script>
-    <script src="../js/contact.js"></script>
-</body>
+        <span class="open-btn">&#9776;</span>
+
+        <!-- Formulaire de contact -->
+        <div class="form-container">
+            <h1 class="title">Contactez-nous</h1>
+            <form class="form">
+                <div class="input-form">
+                    <p id="infoFname"></p>
+                    <label for="fname">Votre nom</label>
+                    <input type="text" name="fname" id="fname">
+                </div>
+                <div class="input-form">
+                    <p id="infoLname"></p>
+                    <label for="lname">Votre prénom</label>
+                    <input type="text" name="lname" id="lname">
+                </div>
+                <div class="input-form">
+                    <p id="infoEmail"></p>
+                    <label for="email">Votre adresse email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="input-form">
+                    <p id="infoMessage"></p>
+                    <label for="message">Votre message</label>
+                    <textarea maxlength="200" name="message" id="message"></textarea>
+                </div>
+                <div class="input-form-btn">
+                    <button type="submit" class="btn-submit">Envoyer</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Fenêtre modale pour résumer les informations envoyées par l'utilisateur -->
+        <div class="modal-info">
+            <h2 CLASS="modal-title"></h2>
+            <p class="modal-text"></p>
+            <p class="modal-message"></p>
+            <button class="btn-modal">Fermer</button>
+        </div>
+
+        <!-- Imports des scripts JavaScript -->
+        <script src="../js/navbar.js"></script>
+        <script src="../js/contact.js"></script>
+    </body>
 </html>

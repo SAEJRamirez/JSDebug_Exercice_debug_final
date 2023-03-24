@@ -1,3 +1,7 @@
+.title {
+    width: 100%;
+}
+
 .form-container {
     display: flex;
     flex-wrap: wrap;
@@ -62,6 +66,66 @@
 
 .form-container p {
     width: 50%;
-    color: #7a2b2b;
+    color: #b84e4e;
     opacity: 0;
+}
+
+.modal-info {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 360px;
+    min-height: 320px;
+    transform: translate(-50%, -50%);
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #62a7a2;
+    color: white;
+    padding: 5px;
+    line-height: 23px;
+    text-align: center;
+}
+
+.modal-title {
+    width: 80%;
+    margin-top: 20px;
+    background-color: #62a7a2;
+    margin-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+.modal-text {
+    width: 80%;
+    background-color: #62a7a2;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.modal-message {
+    width: 80%;
+    margin-top: 10px;
+    background-color: #62a7a2;
+    font-size: 18px;
+}
+
+.btn-modal {
+    margin: 20px auto;
+    width: 130px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #3f3f3f;
+    border: none;
+    border-radius: 5px;
+    outline: 1px solid white;
+    padding: 5px;
+    cursor: pointer;
+    transition: transform .1s;
+    color: white;
+}
+
+.btn-modal:hover {
+    transform: scale(1.1);
 }

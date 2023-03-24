@@ -1,30 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Exercice de debug 1</title>
-    <link rel="stylesheet" type="text/css" href="../css/global.css">
-    <link rel="stylesheet" type="text/css" href="../css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="../css/home.css">
-</head>
+<!doctype html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Page d'accueil</title>
+
+        <!-- Imports des feuilles de styles -->
+        <link rel="stylesheet" type="text/css" href="../css/global.css">
+        <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+        <link rel="stylesheet" type="text/css" href="../css/home.css">
+    </head>
+
+    <!-- Chargement de la liste des étudiants au load de la page -->
     <body onload="displayAll(students)">
-    <div id="side-nav-container">
-        <div id="side-nav">
-            <span class="close-btn">&times;</span>
-            <a href="Home.html" onclick="closeNav()">Accueil</a>
-            <a href="Contact.html" onclick="closeNav()">Contact</a>
+
+        <!-- Menu de navigation -->
+        <div id="side-nav-container">
+            <div id="side-nav">
+                <span class="close-btn">&times;</span>
+                <a href="Home.html" onclick="closeNav()">Accueil</a>
+                <a href="Contact.html" onclick="closeNav()">Contact</a>
+            </div>
         </div>
-    </div>
-    <span class="open-btn">&#9776;</span>
-    <h1 class="title">Liste des élèves</h1>
+        <span class="open-btn">&#9776;</span>
+
+        <!-- Titre et boutons de tri -->
+        <h1 class="title">Liste des élèves</h1>
         <div class="btn-container">
             <button class="btn" id="all" onclick="displayAll(students)">Tous les élèves</button>
             <button class="btn" id="byAge" onclick="displayByAge(students)">Trier par âge</button>
             <button class="btn" id="bySection" onclick="displayBySection(students)">Trier par section</button>
         </div>
+
+        <!-- Affichage de la liste des élèves -->
         <section class="container-card">
         </section>
-    <script src="../js/navbar.js"></script>
-    <script src="../js/home.js"></script>
+
+        <!-- Imports des scripts JavaScript -->
+        <script src="../js/navbar.js"></script>
+        <script src="../js/home.js"></script>
     </body>
 </html>
+
+
