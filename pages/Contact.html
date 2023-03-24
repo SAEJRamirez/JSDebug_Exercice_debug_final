@@ -20,7 +20,7 @@
         <div id="side-nav-container">
             <div id="side-nav">
                 <span class="close-btn">&times;</span>
-                <a href="Home.html">Accueil</a>
+                <a href="Home.html">Accueil</a> <!-- ERREUR ICI : PAS DE LIEN -->
                 <a href="Contact.html">Contact</a>
             </div>
         </div>
@@ -32,8 +32,8 @@
             <form class="form">
                 <div class="input-form">
                     <p id="infoFname"></p>
-                    <label for="fname">Votre nom</label>
-                    <input type="text" name="fname" id="fname">
+                    <label for="fname">Votre nom</label>       <!-- ERREUR ICI : PAS DE LABEL -->
+                    <input type="text" name="fname" id="fname"> <!-- ERREUR ICI : PAS D'ID -->
                 </div>
                 <div class="input-form">
                     <p id="infoLname"></p>
@@ -43,15 +43,15 @@
                 <div class="input-form">
                     <p id="infoEmail"></p>
                     <label for="email">Votre adresse email</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email"> <!-- ERREUR ICI : MAUVAIS TYPE -->
                 </div>
                 <div class="input-form">
                     <p id="infoMessage"></p>
                     <label for="message">Votre message</label>
-                    <textarea maxlength="200" name="message" id="message"></textarea>
+                    <textarea maxlength="200" name="message" id="message"></textarea> <!-- ERREUR ICI : textarea -->
                 </div>
                 <div class="input-form-btn">
-                    <button type="submit" class="btn-submit">Envoyer</button>
+                    <button type="submit" class="btn-submit">Envoyer</button> <!-- ERREUR ICI : TEXT BTN -->
                 </div>
             </form>
         </div>
@@ -66,6 +66,6 @@
 
         <!-- Imports des scripts JavaScript -->
         <script src="../js/navbar.js"></script>
-        <script src="../js/contact.js"></script>
+        <script src="../js/contact.js"></script> <!-- ERREUR ICI : IMPORT -->
     </body>
 </html>

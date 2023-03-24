@@ -47,18 +47,18 @@ const students = [
 ]
 
 
-//Fonction pour afficher tous les élèves
+//Fonction pour afficher tous les élèves // ERREUR ICI : PAS DE FONCTION
 function displayAll(array) {
     createElementToDisplay(array)
 }
 
-//Fonction pour trier les élèves selon leur âge
+//Fonction pour trier les élèves selon leur âge // ERREUR ICI : "sort" vide
 function displayByAge(array) {
     let newArray = array.sort((a, b) => (a.age > b.age ? 1 : -1))
     createElementToDisplay(newArray)
 }
 
-//Fonction pour trier les élèves selon leur section
+//Fonction pour trier les élèves selon leur section // ERREUR ICI : PAS DE FONCTION
 function displayBySection(array) {
     let audioS = []
     let webS = []
@@ -81,7 +81,7 @@ function displayBySection(array) {
     createElementToDisplay(final)
 }
 
-//Fonction pour créer les cartes de chaque étudiant puis les implémenter dans le HTML
+//Fonction pour créer les cartes de chaque étudiant puis les implémenter dans le HTML // ERREUR ICI : Parties vides
 function createElementToDisplay(array) {
     container.innerHTML = ""
     array.forEach((student) => {

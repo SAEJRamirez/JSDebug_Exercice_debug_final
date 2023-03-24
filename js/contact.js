@@ -28,10 +28,10 @@ function validateForm() {
     //Variables et contentes de la fonction
     let dataForm = [fname, lname, email, message]
     let infos = [infoFname, infoLname, infoEmail, infoMessage]
-    const emailRegExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    const emailRegExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/; //ERREUR
     let error = false
 
-    //Boucle pour vérifier si les champs sont vides et afficher un message d'erreur
+    //Boucle pour vérifier si les champs sont vides et afficher un message d'erreur //ERREUR VIDE
     dataForm.forEach((data, index) => {
         if (data.value === "" || data.value === null) {
             infos[index].textContent = "Ce champs est requis"
@@ -40,14 +40,14 @@ function validateForm() {
         }
     })
 
-    //Condition pour vérifier si l'email est valide et afficher un message d'erreur
+    //Condition pour vérifier si l'email est valide et afficher un message d'erreur //ERREUR VIDE
     if (!emailRegExp.test(email.value)) {
         infoEmail.textContent = "Votre adresse e-mail est invalide"
         infoEmail.style.opacity = "100%"
         error = true
     }
 
-    //Affichage du résumé des informations entrées par l'utilisateur s'il n'y a pas d'erreur
+    //Affichage du résumé des informations entrées par l'utilisateur s'il n'y a pas d'erreur //ERREUR
     if (!error) {
         formContainer.style.opacity = "60%"
         modalContainer.style.display = "flex"
@@ -67,7 +67,7 @@ function validateForm() {
 //Redirection sur la page d'accueil
 btnCloseModal.addEventListener('click', () => {
     modalContainer.style.display = "none"
-    window.location.href = "../pages/Home.html"
+    window.location.href = "../pages/Home.html" //ERREUR
 })
 
 //Fonction pour réinitialiser les inputs après envoie

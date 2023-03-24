@@ -14,12 +14,12 @@ navBtnClose.addEventListener('click', () => {
     closeNav()
 })
 
-//Fonction pour ouvrir le menu de navigation
+//Fonction pour ouvrir le menu de navigation // ERREUR ICI : PAS DE FONCTION
 function openNav() {
     navContainer.style.display = 'block'
 }
 
-//Fonction pour fermer le menu de navigation
+//Fonction pour fermer le menu de navigation // ERREUR ICI : PAS DE FONCTION
 function closeNav() {
     navContainer.style.display = 'none'
 }
