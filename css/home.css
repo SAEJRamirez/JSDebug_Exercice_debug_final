@@ -1,14 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    background-color: #3f3f3f;
-    font-family: 'Changa', sans-serif;
-}
 
 .btn-container {
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -34,7 +26,8 @@
 }
 
 .container-card {
-    margin-top: 50px;
+    width: 80%;
+    margin: 30px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -43,8 +36,8 @@
 }
 
 .card {
-    width: 220px;
-    height: 320px;
+    width: 230px;
+    height: 270px;
     border: 2px solid #62a7a2;
     border-radius: 10px;
     padding: 10px;
@@ -67,7 +60,7 @@
 }
 
 .card-section {
-    margin-top: 45px;
+    margin-top: 25px;
     background-color: white;
 }
 

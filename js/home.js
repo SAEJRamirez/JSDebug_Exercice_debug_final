@@ -1,7 +1,4 @@
 const container = document.querySelector('.container-card')
-const btnAll = document.getElementById('all')
-const btnByAge = document.getElementById('byAge')
-const btnBySection = document.getElementById('bySection')
 const students = [
     {
         name: "Julien",
@@ -47,19 +44,6 @@ const students = [
     },
 ]
 
-displayAll(students)
-btnAll.addEventListener('click', () => {
-    container.innerHTML = ""
-    displayAll(students)
-})
-btnByAge.addEventListener('click', () => {
-    container.innerHTML = ""
-    displayByAge(students)
-})
-btnBySection.addEventListener('click', () => {
-    container.innerHTML = ""
-    displayBySection(students)
-})
 
 function displayAll(array) {
     createElementToDisplay(array)
@@ -93,6 +77,7 @@ function displayBySection(array) {
 }
 
 function createElementToDisplay(array) {
+    container.innerHTML = ""
     array.forEach((student) => {
         let div = document.createElement('div')
         let name = document.createElement('h1')

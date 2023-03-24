@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #3f3f3f;
+    font-family: 'Changa', sans-serif;
+}
+
+.title {
+    margin: 30px auto;
+    color: white;
+    text-align: center;
+    font-size: 38px;
+}

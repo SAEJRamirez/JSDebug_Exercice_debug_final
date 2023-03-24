@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/contact.css">
+</head>
+<body>
+    <div id="side-nav-container">
+        <div id="side-nav">
+            <span class="close-btn">&times;</span>
+            <a href="Home.html">Accueil</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </div>
+    <span class="open-btn">&#9776;</span>
+    <h1 class="title">Contactez-nous</h1>
+    <div class="form-container">
+        <form class="form">
+            <div class="input-form">
+                <p id="infoFname"></p>
+                <label for="fname">Votre nom</label>
+                <input type="text" name="fname" id="fname">
+            </div>
+            <div class="input-form">
+                <p id="infoLname"></p>
+                <label for="lname">Votre prénom</label>
+                <input type="text" name="lname" id="lname">
+            </div>
+            <div class="input-form">
+                <p id="infoEmail"></p>
+                <label for="email">Votre adresse email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="input-form">
+                <p id="infoMessage"></p>
+                <label for="message">Votre message</label>
+                <textarea maxlength="100" name="message" id="message"> </textarea>
+            </div>
+            <div class="input-form-btn">
+                <button type="submit" class="btn-submit">Envoyer</button>
+            </div>
+        </form>
+    </div>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>
